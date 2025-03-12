@@ -1,0 +1,1 @@
+//draw_text(x,y+64,array_get_index(controle_clicado,1))

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_bala_andando",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_bala_andando",
+  "parent":{
+    "name":"PROJETEIS",
+    "path":"folders/Objetos/PROJETEIS.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
