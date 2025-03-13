@@ -9,7 +9,7 @@ player = noone // Id do player para pegar variaveis do player
 //
 
 // DADOS GERAIS DO PROJETIL 
-bala_spd = 0
+velocidade = 0
 direcao = 0
 //
 

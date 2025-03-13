@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"checar_colisao",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"checar_colisao",
+  "parent":{
+    "name":"PROJETEIS",
+    "path":"folders/Objetos/PROJETEIS.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

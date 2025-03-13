@@ -17,7 +17,7 @@ y += lengthdir_y(spd,dir)
 	instance_destroy()
 	}
 	
-	if self.y < 0
+	if self.y > 0
 	{
 	instance_destroy()
 	}
