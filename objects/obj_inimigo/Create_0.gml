@@ -3,10 +3,21 @@ alvo = noone
 
 dir_to_player =  0 
 spd = 4
+frame = 0
 //
+
+
 
 // DADOS SOBRE ATAQUE 
 estado_ataque = false
+
+
+bala_spd = 15
+bala_dano = 1
+bala_tipo = balas_type.NORMAL
+bala_cooldown = 100
+
+buffs = ds_list_create()
 //
 
 
@@ -45,4 +56,22 @@ var spY = lengthdir_y(spd,dir_to_player) //	 "spX" é o valor que ele vai andar 
 
 x += spX 
 y += spY
+}
+
+function atacar() {
+	if frame == bala_cooldown {
+		direcao_bala = dir_to_player
+		var ataque = instance_create_layer(x, y, "camada_baixo", obj_gerador_de_balas)
+		ataque.player = self
+		ataque.direcao_bala = dir_to_player
+		ataque.velocidade = bala_spd
+	}
+}
+
+function frame_count() {
+	if frame <= bala_cooldown {
+		frame++
+	} else {
+		frame = 0
+	}
 }
