@@ -23,7 +23,7 @@ direcao_bala = 0
 buffs = ds_list_create()
 enum possiveis_buffs{
     FOGO,
-    FREEZE,
+    FREEZE
 }
 // 
 

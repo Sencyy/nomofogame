@@ -5,6 +5,6 @@
 var player = instance_place(x,y,obj_player)
 
 if player{
-ds_list_add(player.buffs,1)
+ds_list_add(player.buffs,player.possiveis_buffs)
 instance_destroy()
 }
