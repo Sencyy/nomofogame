@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player_tiro",
+  "%Name":"obj_COBAIA_BUFF",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player_tiro",
+  "name":"obj_COBAIA_BUFF",
   "overriddenProperties":[],
   "parent":{
-    "name":"PROJETEIS",
-    "path":"folders/Objetos/PROJETEIS.yy",
+    "name":"COBAIAS",
+    "path":"folders/Objetos/COBAIAS.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_tiro",
-    "path":"sprites/spr_player_tiro/spr_player_tiro.yy",
+    "name":"mammoth",
+    "path":"sprites/mammoth/mammoth.yy",
   },
   "spriteMaskId":null,
   "visible":true,

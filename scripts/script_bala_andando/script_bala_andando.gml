@@ -4,21 +4,21 @@ y += lengthdir_y(spd,dir)
 
 	if self.x > room_width //DESTRUINDO O PROJETIL FORA DA ROOM
 	{
-	instance_destroy()
+	script_destroy_bala(list_bala_buffs)
 	}
-	
+
 	if self.y > room_height
 	{
-	instance_destroy()
+	script_destroy_bala(list_bala_buffs)
 	}
 	
 	if self.x < 0
 	{
-	instance_destroy()
+	script_destroy_bala(list_bala_buffs)
 	}
 	
-	if self.y > 0
+	if self.y < 0
 	{
-	instance_destroy()
+	script_destroy_bala(list_bala_buffs)
 	}
 }

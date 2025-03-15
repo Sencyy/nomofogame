@@ -22,14 +22,15 @@ direcao_bala = 0
 // DADOS BUFFS
 buffs = ds_list_create()
 enum possiveis_buffs{
-    dano,
-    fogo,
-    freeze,
+    FOGO,
+    FREEZE,
 }
 // 
 
 // DADOS BALA TIPO 
 bala_tipo = balas_type.NORMAL
+bala_spd = 6
+bala_dano = 5
 
 enum balas_type{
     NORMAL,
@@ -51,7 +52,7 @@ function vou_atacar(){ // Criando a instancia do "gerador_de_balas", checando se
 					   
 	if estado_atacando = 1 && cd_timer = 0
 	{
-	show_debug_message(estado_atacando)
+	//show_debug_message(estado_atacando)
 	cd_timer = cd
 	estado_atacando = 0
 	

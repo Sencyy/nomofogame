@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_destroy_bala",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_destroy_bala",
+  "parent":{
+    "name":"PROJETEIS",
+    "path":"folders/Objetos/PROJETEIS.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
