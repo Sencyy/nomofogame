@@ -41,6 +41,7 @@
     {"id":{"name":"obj_COBAIA_BUFF","path":"objects/obj_COBAIA_BUFF/obj_COBAIA_BUFF.yy",},},
     {"id":{"name":"obj_controle","path":"objects/obj_controle/obj_controle.yy",},},
     {"id":{"name":"obj_gerador_de_balas","path":"objects/obj_gerador_de_balas/obj_gerador_de_balas.yy",},},
+    {"id":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},},
     {"id":{"name":"obj_inimigo","path":"objects/obj_inimigo/obj_inimigo.yy",},},
     {"id":{"name":"obj_player_tiro","path":"objects/obj_player_tiro/obj_player_tiro.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},

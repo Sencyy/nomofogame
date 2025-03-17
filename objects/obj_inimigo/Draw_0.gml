@@ -1,5 +1,5 @@
 draw_self() // se não botar isso o spr dele não vai aparecer
-
+draw_text(x,y,hp)
 
 
 

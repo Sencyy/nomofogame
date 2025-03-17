@@ -1,2 +1,2 @@
 draw_self()
-draw_text(x,y,buffs)
+draw_text(x,y,hp)
