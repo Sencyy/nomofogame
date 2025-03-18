@@ -13,7 +13,8 @@ direcao = 0
 velocidade = 0
 single_or_area = 0
 atravessa = 0
-alvo = noone // quem vai ser o alvo que será colidido 
+alvo = noone // quem vai ser o alvo que será colidido
+sprite = noone
 
 // Se o ataque so pega em um OU em area 
 // Single = 0
@@ -29,6 +30,7 @@ bala.dir = player.direcao_bala // direcao da bala que está no player
 bala.spd = player.bala_spd  // spd da bala que está no player 
 bala.single_or_area = single_or_area
 bala.alvo = alvo
+bala.sprite = sprite
 
 bala.dano = player.bala_dano //dano da bala que está no player
 

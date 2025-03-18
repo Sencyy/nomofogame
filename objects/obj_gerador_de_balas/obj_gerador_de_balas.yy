@@ -9,8 +9,8 @@
   "name":"obj_gerador_de_balas",
   "overriddenProperties":[],
   "parent":{
-    "name":"PLAYER",
-    "path":"folders/Objetos/PLAYER.yy",
+    "name":"PROJETEIS",
+    "path":"folders/Objetos/PROJETEIS.yy",
   },
   "parentObjectId":null,
   "persistent":false,

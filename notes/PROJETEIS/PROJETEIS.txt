@@ -1,0 +1,7 @@
+TODOS os projeteis precisam obrigatoriamente de: 
+-- velocidade 
+-- dano 
+-- single_or_area // Se o ataque é single(0) ou em area(1)
+-- atravessa // Se o projetil atravessa os inimigos(1 para sim)
+-- alvo // qual obj será checado para colisão 
+-- sprite  // qual será o sprite da bala

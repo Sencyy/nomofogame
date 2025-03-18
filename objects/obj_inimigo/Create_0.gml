@@ -2,7 +2,7 @@
 alvo = noone 
 
 dir_to_player =  0 
-spd = 4
+spd = 1
 frame = 0
 //
 
@@ -68,6 +68,7 @@ function atacar() {
 		ataque.direcao_bala = dir_to_player
 		ataque.velocidade = bala_spd
 		ataque.alvo = obj_player // O PROJETIL VAI COLIDIR NO PLAYER
+		ataque.sprite = spr_player_tiro_dois
 	}
 }
 

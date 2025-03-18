@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"PROJETEIS",
+  "name":"PROJETEIS",
+  "parent":{
+    "name":"PROJETEIS",
+    "path":"folders/Objetos/PROJETEIS.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}
