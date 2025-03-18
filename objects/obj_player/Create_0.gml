@@ -5,6 +5,11 @@ controle.player = self
 // ESTADOS 
 estado_andando = 0
 estado_atacando = 0
+estado_morto = 0
+//
+
+// DADOS SOBRE VIDA
+hp = 30
 //
 
 // DADOS DE ANDANDO 
@@ -60,8 +65,7 @@ function vou_atacar(){ // Criando a instancia do "gerador_de_balas", checando se
 	var ataque = instance_create_layer(x,y,"camada_baixo",obj_gerador_de_balas)
 	ataque.player = self // dando sua id para o gerador de bala
 	ataque.direcao = direcao_bala 
-	
-
+	ataque.alvo = obj_inimigo_pai // O PROJETIL VAI COLIDIR NOS INIMIGOS
 	}
 }
 
@@ -69,6 +73,17 @@ function contando_cd(){ // tá reduzind o cd
 cd_timer = max(cd_timer-1,0)
 }
 
+
+function morri_check(){
+	if hp <= 0{
+	estado_morto = 1
+	}
+} 
+
 function direcao_check(){
 	direcao_bala = point_direction(x,y,mouse_x,mouse_y)
 }
+
+
+
+

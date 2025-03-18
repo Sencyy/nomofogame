@@ -6,7 +6,9 @@ spd = 4
 frame = 0
 //
 
-
+// DADOS SOBRE VIDA
+hp = 10
+//
 
 // DADOS SOBRE ATAQUE 
 estado_ataque = false
@@ -65,6 +67,7 @@ function atacar() {
 		ataque.player = self
 		ataque.direcao_bala = dir_to_player
 		ataque.velocidade = bala_spd
+		ataque.alvo = obj_player // O PROJETIL VAI COLIDIR NO PLAYER
 	}
 }
 
@@ -75,3 +78,7 @@ function frame_count() {
 		frame = 0
 	}
 }
+
+
+
+
