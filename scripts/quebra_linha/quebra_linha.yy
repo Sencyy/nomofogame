@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"quebra_linha",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"quebra_linha",
+  "parent":{
+    "name":"DIALOGO",
+    "path":"folders/Objetos/DIALOGO.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
