@@ -2,9 +2,11 @@ TODOS os projeteis precisam obrigatoriamente de:
 -- velocidade 
 -- dano 
 -- single_or_area // Se o ataque é single(0) ou em area(1)
--- atravessa // Se o projetil atravessa os inimigos(1 para sim)
 -- alvo // qual obj será checado para colisão 
 -- sprite  // qual será o sprite da bala
 
 OPOCIONAIS 
--- atravessa_quantos // quantos inimigos seram atravessados 
+-- atravessa // Se o projetil atravessa os inimigos(1 para sim)
+-- atravessa_quantos // quantos inimigos serão atravessados 
+-- spawn_bala_mount // quantas vezes ira atirar 
+-- spawn_bala_escopeta_quantia // quantas balas serão spawnadas duma vez 
