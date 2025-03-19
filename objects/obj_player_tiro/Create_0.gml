@@ -49,7 +49,28 @@ function colisao(){
 		}
 		else
 		{
-
+			//if single_or_area = 1
+			{
+			var colididos_list = ds_list_create()
+			instance_place_list(x,y,alvo,colididos_list,false)
+			
+				for(i=0;i<ds_list_size(colididos_list);i++)
+				{
+					if ds_list_find_index(inimigos_atingidos_list,colididos_list[|i]) = -1
+					{
+					var inimigo_especifico = colididos_list[|i]
+					inimigo_especifico.hp -= dano
+					atravessa_quantos -= 1
+					ds_list_add(inimigos_atingidos_list,inimigo_especifico)
+					}
+				}
+			ds_list_destroy(colididos_list)
+			}
+			
+			if atravessa_quantos <= 0
+			{
+			script_destroy_bala(list_bala_buffs)
+			}
 		}
 	}
 }

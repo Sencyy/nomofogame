@@ -34,7 +34,7 @@ enum possiveis_buffs{
 
 // DADOS BALA TIPO 
 bala_tipo = balas_type.NORMAL
-bala_spd = 6
+bala_spd = 11
 bala_dano = 5
 
 enum balas_type{
@@ -67,6 +67,7 @@ function vou_atacar(){ // Criando a instancia do "gerador_de_balas", checando se
 	ataque.direcao = direcao_bala 
 	ataque.alvo = obj_inimigo_pai // O PROJETIL VAI COLIDIR NOS INIMIGOS
 	ataque.sprite = spr_player_tiro
+	
 	}
 }
 

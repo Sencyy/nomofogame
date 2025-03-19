@@ -13,6 +13,7 @@ direcao = 0
 velocidade = 0
 single_or_area = 0
 atravessa = 0
+atravessa_quantos = 0
 alvo = noone // quem vai ser o alvo que será colidido
 sprite = noone
 
@@ -31,6 +32,8 @@ bala.spd = player.bala_spd  // spd da bala que está no player
 bala.single_or_area = single_or_area
 bala.alvo = alvo
 bala.sprite = sprite
+bala.atravessa = atravessa
+bala.atravessa_quantos = atravessa_quantos
 
 bala.dano = player.bala_dano //dano da bala que está no player
 

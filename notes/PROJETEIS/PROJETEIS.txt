@@ -5,3 +5,6 @@ TODOS os projeteis precisam obrigatoriamente de:
 -- atravessa // Se o projetil atravessa os inimigos(1 para sim)
 -- alvo // qual obj será checado para colisão 
 -- sprite  // qual será o sprite da bala
+
+OPOCIONAIS 
+-- atravessa_quantos // quantos inimigos seram atravessados 
