@@ -55,6 +55,7 @@
     {"id":{"name":"quebra_linha","path":"scripts/quebra_linha/quebra_linha.yy",},},
     {"id":{"name":"script_bala_andando","path":"scripts/script_bala_andando/script_bala_andando.yy",},},
     {"id":{"name":"script_destroy_bala","path":"scripts/script_destroy_bala/script_destroy_bala.yy",},},
+    {"id":{"name":"Battle_Against_a_True_Hero_music","path":"sounds/Battle_Against_a_True_Hero_music/Battle_Against_a_True_Hero_music.yy",},},
     {"id":{"name":"Imagem_do_WhatsApp_de_2025_03_19___s__19_08_44_f00d1bd1","path":"sprites/Imagem_do_WhatsApp_de_2025_03_19___s__19_08_44_f00d1bd1/Imagem_do_WhatsApp_de_2025_03_19___s__19_08_44_f00d1bd1.yy",},},
     {"id":{"name":"mammoth","path":"sprites/mammoth/mammoth.yy",},},
     {"id":{"name":"spr_inimigo","path":"sprites/spr_inimigo/spr_inimigo.yy",},},
