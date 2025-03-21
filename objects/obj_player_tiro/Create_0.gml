@@ -7,7 +7,7 @@ sprite = noone
 
 // DADOS LIST'S 
 list_bala_type = 0
-list_bala_buffs = ds_list_create()
+list_bala_efeitos = ds_list_create()
 //
 
 // COLISÃO DADOS
@@ -45,7 +45,7 @@ function colisao(){
 				inimigo_especifico.hp -= dano
 				}
 			}
-		script_destroy_bala(list_bala_buffs) // DESTROY BALA
+		script_destroy_bala(list_bala_efeitos) // DESTROY BALA
 		}
 		else
 		{
@@ -69,7 +69,7 @@ function colisao(){
 			
 			if atravessa_quantos <= 0
 			{
-			script_destroy_bala(list_bala_buffs)
+			script_destroy_bala(list_bala_efeitos)
 			}
 		}
 	}

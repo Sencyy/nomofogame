@@ -1,6 +1,6 @@
 /*
 Esse objeto serve para que antes de spawnar um projetil, ele 
-passe por checks, para aplicar buffs especificos nele. 
+passe por checks, para aplicar efeitos especificos nele. 
 */  
 
 
@@ -61,7 +61,7 @@ for(i=0;i <= spawn_bala_escopeta_quantia;i++)
 	bala.dano = player.bala_dano //dano da bala que está no player
 
 	bala.list_bala_type = player.bala_tipo
-	ds_list_copy(bala.list_bala_buffs,player.buffs) // colando a lista de buffs do player PARA a bala.
+	ds_list_copy(bala.list_bala_efeitos,player.efeitos) // colando a lista de efeitos do player PARA a bala.
 	
 	spawn_bala_escopeta_maisoumenos = -spawn_bala_escopeta_maisoumenos
 	

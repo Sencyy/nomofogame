@@ -24,9 +24,16 @@ cd_timer = 0
 direcao_bala = 0
 //
 
-// DADOS BUFFS
-buffs = ds_list_create()
-enum possiveis_buffs{
+// DADOS BUFF DE ATRIBUTOS 
+
+// Vai ter uma array aqui que vai guardar os valores de dano extra/ spd extra e etc
+// agr tem a variavel "bala_dano_pai"
+
+//
+
+// DADOS EFEITOS
+efeitos = ds_list_create()
+enum possiveis_efeitos{
     FOGO,
     FREEZE
 }
@@ -34,8 +41,16 @@ enum possiveis_buffs{
 
 // DADOS BALA TIPO 
 bala_tipo = balas_type.NORMAL
-bala_spd = 11
-bala_dano = 5
+bala_spd = 11 // spd que será enviado no final
+bala_dano = 5 // dano que será enviado no final
+
+bala_dano_pai =  bala_dano // base para aplicar os buff de dano
+bala_spd_pai = bala_spd // base para aplicar os buff de spd
+
+bala_atravessa = 1
+bala_atravessa_quantos = 2
+bala_quantia_de_balas = 0 // possivel buff
+bala_quantia_de_tiros = 1 // possivel buff
 
 enum balas_type{
     NORMAL,
@@ -66,6 +81,11 @@ function vou_atacar(){ // Criando a instancia do "gerador_de_balas", checando se
 	ataque.direcao = direcao_bala 
 	ataque.alvo = obj_inimigo_pai // O PROJETIL VAI COLIDIR NOS INIMIGOS
 	ataque.sprite = spr_player_tiro
+	
+	ataque.spawn_bala_escopeta_quantia = bala_quantia_de_balas
+	ataque.spawn_bala_mount = bala_quantia_de_tiros
+	ataque.atravessa = bala_atravessa
+	ataque.atravessa_quantos = bala_atravessa_quantos
 	}
 }
 

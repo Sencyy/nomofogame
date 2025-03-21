@@ -19,7 +19,7 @@ bala_dano = 1
 bala_tipo = balas_type.NORMAL
 bala_cooldown = 100
 
-buffs = ds_list_create()
+efeitos = ds_list_create()
 //
 
 
