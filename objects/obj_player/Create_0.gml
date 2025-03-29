@@ -6,6 +6,7 @@ controle.player = self
 estado_andando = 0
 estado_atacando = 0
 estado_morto = 0
+estado_level_up = 1
 //
 
 // DADOS SOBRE VIDA
@@ -104,6 +105,16 @@ function direcao_check(){
 	direcao_bala = point_direction(x,y,mouse_x,mouse_y)
 }
 
+function level_up(){
+	if estado_level_up = 1
+	{
+		if !instance_exists(obj_gerador_de_buffs)
+		{
+		var gerador_de_buff = instance_create_layer(x,y,"camada_cima",obj_gerador_de_buffs)
+		gerador_de_buff.player = self
+		}
+	}
+}
 
 
 
