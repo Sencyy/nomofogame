@@ -30,7 +30,6 @@ function spaw_cards()
 	var buff_card = instance_create_layer(x,y,"camada_cima",obj_buff_card)
 	buff_card.buff_type = buff_type_random
 	buff_card.x = player.x + 300 * i -300
-	show_debug_message(buff_id_temporario[1][2])
 	}
 }
 
