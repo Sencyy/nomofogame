@@ -1,3 +1,5 @@
+// Player
+player = instance_nearest(1, 1, obj_player)
 // Caixa de Diálogo
 dialogo_x = 20
 dialogo_yy = window_get_height() - 20
