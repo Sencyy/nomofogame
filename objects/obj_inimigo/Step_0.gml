@@ -2,9 +2,11 @@ if obj_player.estado_level_up = 0
 {
 dir_do_player()
 
-walking_new()
+//walking_new()
+walking_smart()
 
 frame_count()
+atacar()
 
 morreu()
 

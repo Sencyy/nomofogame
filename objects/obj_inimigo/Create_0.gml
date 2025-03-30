@@ -62,6 +62,11 @@ x += spX
 y += spY
 }
 
+function walking_smart() {
+	alvo = instance_nearest(x,y,obj_player)
+	mp_potential_step(alvo.x, alvo.y, 2/* aqui e a velocidade */, false)
+}
+
 function atacar() {
 	if frame == bala_cooldown {
 		direcao_bala = dir_to_player
