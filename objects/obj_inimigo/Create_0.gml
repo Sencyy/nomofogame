@@ -7,8 +7,10 @@ frame = 0
 //
 
 // DADOS SOBRE VIDA
-hp = 10
+hp = 10 + obj_player.level * 2
+estado_morto = 0
 //
+
 
 // DADOS SOBRE ATAQUE 
 estado_ataque = false
@@ -80,6 +82,26 @@ function frame_count() {
 	}
 }
 
+function morreu(){
+	if hp <= 0
+	{
+	estado_morto = 1
+	}
+	if estado_morto = 1
+	{
+	obj_player.level_timer +=1
+	instance_destroy()
+	}
+}
 
+function COBAIA_mordendo(){
+var player = instance_place(x,y,obj_player)
 
+	if player
+	{
+	player.hp -= 1
+	instance_destroy()
+	}
+
+}
 

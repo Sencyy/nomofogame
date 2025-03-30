@@ -29,9 +29,12 @@ function spaw_cards()
 	var buff_especifico = function_buff_aleatorio_pela_raridade(buff_id_temporario)
 	
 	var buff_card = instance_create_layer(x,y,"camada_cima",obj_buff_card)
+	buff_card.player = player
+	buff_card.gerador_de_buff_pai = self
 	buff_card.buff_type = buff_type_random
 	buff_card.buff_escolhido = buff_especifico
-	buff_card.x = x - 300 + (i * 300)
+	buff_card.x = room_width/2 - 300 + (i * 300)
+	buff_card.y = room_height/2
 	}
 }
 

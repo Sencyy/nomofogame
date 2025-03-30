@@ -6,11 +6,17 @@ controle.player = self
 estado_andando = 0
 estado_atacando = 0
 estado_morto = 0
-estado_level_up = 1
+estado_level_up = 0
+//
+
+// cobaia lv up
+level = 0
+level_to_up = 5
+level_timer = 0
 //
 
 // DADOS SOBRE VIDA
-hp = 30
+hp = 5
 //
 
 // DADOS DE ANDANDO 
@@ -48,10 +54,11 @@ bala_dano = 5 // dano que será enviado no final
 bala_dano_pai =  bala_dano // base para aplicar os buff de dano
 bala_spd_pai = bala_spd // base para aplicar os buff de spd
 
-bala_atravessa = 1
-bala_atravessa_quantos = 2
+bala_atravessa = 0
+bala_atravessa_quantos = 1
 bala_quantia_de_balas = 0 // possivel buff
 bala_quantia_de_tiros = 1 // possivel buff
+bala_quantia_de_tiros_time_per_shot = 5
 
 enum balas_type{
     NORMAL,
@@ -87,6 +94,7 @@ function vou_atacar(){ // Criando a instancia do "gerador_de_balas", checando se
 	ataque.spawn_bala_mount = bala_quantia_de_tiros
 	ataque.atravessa = bala_atravessa
 	ataque.atravessa_quantos = bala_atravessa_quantos
+	ataque.spawn_bala_mount_time = bala_quantia_de_tiros_time_per_shot
 	}
 }
 
@@ -108,6 +116,10 @@ function direcao_check(){
 function level_up(){
 	if estado_level_up = 1
 	{
+	instance_destroy(obj_gerador_de_balas)
+	instance_destroy(obj_player_tiro)
+	instance_destroy(obj_inimigo_pai) // cobaia
+	
 		if !instance_exists(obj_gerador_de_buffs)
 		{
 		var gerador_de_buff = instance_create_layer(x,y,"camada_cima",obj_gerador_de_buffs)
@@ -116,5 +128,18 @@ function level_up(){
 	}
 }
 
+function nao_fugir_da_sala(){
+x = max(x, 32);
+y = max(y, 32);
+x = min(x,room_width-32);
+y = min(y,room_height-32);
+}
 
-
+function COBAIA_lv_up()
+{
+	if level_timer >= level_to_up
+	{
+	estado_level_up = 1
+	level_to_up += 4 + level_to_up/3
+	}
+}

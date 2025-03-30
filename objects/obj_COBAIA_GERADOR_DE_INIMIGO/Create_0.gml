@@ -1,0 +1,1 @@
+spaw_time_timer = 10

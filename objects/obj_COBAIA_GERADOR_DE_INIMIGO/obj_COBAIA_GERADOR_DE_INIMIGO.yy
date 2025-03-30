@@ -1,17 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gerador_de_buffs",
+  "%Name":"obj_COBAIA_GERADOR_DE_INIMIGO",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gerador_de_buffs",
+  "name":"obj_COBAIA_GERADOR_DE_INIMIGO",
   "overriddenProperties":[],
   "parent":{
-    "name":"BUFFS",
-    "path":"folders/Objetos/BUFFS.yy",
+    "name":"COBAIAS",
+    "path":"folders/Objetos/COBAIAS.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"iti_malia",
+    "path":"sprites/iti_malia/iti_malia.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
