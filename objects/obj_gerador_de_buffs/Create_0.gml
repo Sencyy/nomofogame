@@ -26,16 +26,18 @@ function spaw_cards()
 	var buff_id_temporario = [] // variavel temporaria que ira guardar os dados dos possiveis buffs 
 	
 	function_buff_id(buff_type_random,buff_id_temporario) // enviando os possiveis buffs para a variavel
+	var buff_especifico = function_buff_aleatorio_pela_raridade(buff_id_temporario)
 	
 	var buff_card = instance_create_layer(x,y,"camada_cima",obj_buff_card)
 	buff_card.buff_type = buff_type_random
-	buff_card.x = player.x + 300 * i -300
+	buff_card.buff_escolhido = buff_especifico
+	buff_card.x = x - 300 + (i * 300)
 	}
 }
 
 function function_buff_id(buff_type_especifico,_array){ // esta função dá os dados de cada possivel buff (como seu nome, sua raridade e seu ID)
-	if buff_type_especifico = 0
-	{	// colocando os dados de um buff numa array geral.
+	if buff_type_especifico = 0 //se o buff é do tipo "normal"
+	{	// colocando os possiveis buffs do tipo "normal" numa array 
 	
 	_array[0][0] = 1
 	_array[0][1] = 3
@@ -51,20 +53,59 @@ function function_buff_id(buff_type_especifico,_array){ // esta função dá os 
 	_array[2][2] = "mais projeteis"
 	//
 	_array[3][0] = 4
-	_array[3][1] = 2
+	_array[3][1] = 3
 	_array[3][2] = "penetrante"
 	//
 	_array[4][0] = 5
-	_array[4][1] = 2
+	_array[4][1] = 1
 	_array[4][2] = "mais disparos"
 	}
-	if buff_type_especifico = 1
-	{
+	if buff_type_especifico = 1 // se o buff é do tipo "atributo" 
+	{ // colocando os possiveis buffs do tipo "atributo" numa array 
 	show_debug_message("n existe 'atributo'")
 	}
-	if buff_type_especifico = 2
-	{
+	if buff_type_especifico = 2 // se o buff é do tipo "efeito"
+	{ // colocando os possiveis buffs do tipo "efeito" numa array 
 	show_debug_message("n existe 'efeito'")
 	}
 }
+
+function function_buff_aleatorio_pela_raridade(_array){
+randomize()
+var numero_aleatorio = random(10)
+var _new_array = [] // array que guarda os buffs do "buff_id_temporario" somente duma raridade especifica 
+var buff_especifico_escolhido = []
+
+function function_buff_aleatorio_pela_raridade_get_new_array(_raridade,_array){ // função para o "_new_array" pegue os dados da array "buff_id_temporario" que sejam da raridade do "numero_aleatorio", fazendo com que ele tenha somente os buffs de sua raridade
+	var _new_array_func = []
 	
+	for(var _i=0;_i<array_length(_array) ;_i++)
+	{	
+		if _array[_i][1] = _raridade
+		{
+		array_push(_new_array_func,_array[_i]) // buff adicionado para a nova array
+		} 
+	}
+	return _new_array_func
+}
+
+if numero_aleatorio < 5
+{
+_new_array = function_buff_aleatorio_pela_raridade_get_new_array(3,_array)
+}
+
+if numero_aleatorio > 5 && numero_aleatorio < 9
+{
+_new_array = function_buff_aleatorio_pela_raridade_get_new_array(2,_array)
+}
+
+if numero_aleatorio >= 9
+{
+_new_array = function_buff_aleatorio_pela_raridade_get_new_array(1,_array)
+} 
+
+buff_especifico_escolhido = floor(random(array_length(_new_array))) // escolhendo uma POSIÇÃO dentro da array "_new_array"
+buff_especifico_escolhido = _new_array[buff_especifico_escolhido] // tranformando "buff_especifico_escolhido" numa array, com os dados do "_new_array" NA possição do "buff_especifico_escolhido" 
+
+return buff_especifico_escolhido //retorna um buff especifico dentro dum tier de raridade 
+}

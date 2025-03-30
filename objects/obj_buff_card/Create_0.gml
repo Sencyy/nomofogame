@@ -1,2 +1,2 @@
-buff_type = 0
-buff_quantia = 0
+buff_type = noone
+buff_escolhido = []
