@@ -7,12 +7,17 @@ estado_andando = 0
 estado_atacando = 0
 estado_morto = 0
 estado_level_up = 0
+estado_dialago = 0
 //
 
 // cobaia lv up
 level = 0
 level_to_up = 5
 level_timer = 0
+//
+
+// DADOS SOBRE TROCA DE SPR
+size_sprite = 0.6
 //
 
 // DADOS SOBRE VIDA
@@ -141,5 +146,69 @@ function COBAIA_lv_up()
 	{
 	estado_level_up = 1
 	level_to_up += 4 + level_to_up/3
+	}
+}
+
+function colisao_na_parede_invisivel(){
+
+	if place_meeting(x+spX,y,obj_parede_invisivel)
+	{
+		while !place_meeting(x+sign(spX),y,obj_parede_invisivel)
+		{
+		x +=sign(spX)
+		}
+	spX = 0
+	}
+	if place_meeting(x,y+spY,obj_parede_invisivel)
+	{
+		while !place_meeting(x,y+sign(spY),obj_parede_invisivel)
+		{
+		y += sign(spY)
+		}
+	spY = 0
+	}
+
+
+}
+	
+function trocando_spr(){
+	if spY > 0
+	{
+	sprite_index = spr_player_walking_down
+	image_speed = 1
+	image_xscale = size_sprite
+	image_yscale = size_sprite
+	}
+	if spY < 0
+	{
+	sprite_index = spr_player_walking_up
+	image_speed = 1
+	image_xscale = size_sprite
+	image_yscale = size_sprite
+	}
+	
+	if spX > 0
+	{
+	sprite_index = spr_player_walking_vertical
+	image_speed = 1
+	image_xscale = size_sprite
+	image_yscale = size_sprite
+	}
+	if spX < 0
+	{
+	sprite_index = spr_player_walking_vertical
+	image_speed = 1
+	image_xscale = -size_sprite
+	image_yscale = size_sprite
+	}
+	
+	
+	if spX = 0 && spY = 0
+	{
+	image_speed = 0
+	sprite_index = spr_player_idle
+	image_index = 0
+	image_xscale = size_sprite
+	image_yscale = size_sprite
 	}
 }

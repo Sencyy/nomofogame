@@ -33,8 +33,8 @@ function spaw_cards()
 	buff_card.gerador_de_buff_pai = self
 	buff_card.buff_type = buff_type_random
 	buff_card.buff_escolhido = buff_especifico
-	buff_card.x = room_width/2 - 300 + (i * 300)
-	buff_card.y = room_height/2
+	buff_card.x = x -300 +(i*300)
+	buff_card.y = y-100
 	}
 }
 

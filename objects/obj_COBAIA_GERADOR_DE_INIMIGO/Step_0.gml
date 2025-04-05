@@ -1,4 +1,4 @@
-if obj_player.estado_level_up = 0
+if obj_player.estado_level_up = 0 && obj_player.estado_dialago = 0
 {
 	spaw_time_timer = max(spaw_time_timer-1,0)
 
