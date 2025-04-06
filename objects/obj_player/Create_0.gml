@@ -129,6 +129,18 @@ function level_up(){
 		{
 		var gerador_de_buff = instance_create_layer(x,y,"camada_cima",obj_gerador_de_buffs)
 		gerador_de_buff.player = self
+		
+		
+		image_xscale = size_sprite
+		image_yscale = size_sprite
+		image_speed = 0
+		sprite_index = spr_player_idle
+		image_index = 0
+		}
+		else
+		{
+		image_xscale = size_sprite
+		image_yscale = size_sprite
 		}
 	}
 }
@@ -208,7 +220,13 @@ function trocando_spr(){
 	image_speed = 0
 	sprite_index = spr_player_idle
 	image_index = 0
-	image_xscale = size_sprite
 	image_yscale = size_sprite
+	image_xscale = size_sprite
 	}
+}
+	
+function morri_animaton(){
+sprite_index = spr_player_morto
+image_xscale = size_sprite
+image_yscale = size_sprite
 }

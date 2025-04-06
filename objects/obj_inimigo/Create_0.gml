@@ -24,6 +24,11 @@ bala_cooldown = 100
 efeitos = ds_list_create()
 //
 
+// DADOS SOBRE SPR
+size = 0.3
+image_yscale = size // pra evitar um bug do jumpscary
+image_xscale = size // pra evitar um bug do jumpscary
+//
 
 
 
@@ -110,3 +115,14 @@ var player = instance_place(x,y,obj_player)
 
 }
 
+function virando_o_spr(){
+	if alvo.x > x
+	{
+	image_xscale = size
+	}
+	else
+	{
+	image_xscale = -size
+	}
+image_yscale = size
+}

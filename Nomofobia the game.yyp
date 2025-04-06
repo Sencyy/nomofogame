@@ -71,6 +71,7 @@
     {"id":{"name":"spr_inimigo","path":"sprites/spr_inimigo/spr_inimigo.yy",},},
     {"id":{"name":"spr_parede_invisivel","path":"sprites/spr_parede_invisivel/spr_parede_invisivel.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
+    {"id":{"name":"spr_player_morto","path":"sprites/spr_player_morto/spr_player_morto.yy",},},
     {"id":{"name":"spr_player_tiro_dois","path":"sprites/spr_player_tiro_dois/spr_player_tiro_dois.yy",},},
     {"id":{"name":"spr_player_tiro","path":"sprites/spr_player_tiro/spr_player_tiro.yy",},},
     {"id":{"name":"spr_player_walking_down","path":"sprites/spr_player_walking_down/spr_player_walking_down.yy",},},

@@ -1,5 +1,3 @@
-image_xscale = 0.3
-image_yscale = 0.3
 draw_self() // se não botar isso o spr dele não vai aparecer
 draw_text(x,y,hp)
 

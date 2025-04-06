@@ -7,6 +7,7 @@ if estado_morto = 0
 	direcao_check()
 	colisao_na_parede_invisivel()
 	vou_andar()
+	trocando_spr()
 	vou_atacar()
 	contando_cd()
 	}
@@ -14,4 +15,7 @@ nao_fugir_da_sala()
 level_up()
 COBAIA_lv_up()
 }
-trocando_spr()
+else
+{
+morri_animaton()
+}
