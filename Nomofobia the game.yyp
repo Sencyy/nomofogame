@@ -66,6 +66,8 @@
     {"id":{"name":"protagonista_nomof_cutscene","path":"sprites/protagonista_nomof_cutscene/protagonista_nomof_cutscene.yy",},},
     {"id":{"name":"spr_buff_card","path":"sprites/spr_buff_card/spr_buff_card.yy",},},
     {"id":{"name":"spr_card_buff","path":"sprites/spr_card_buff/spr_card_buff.yy",},},
+    {"id":{"name":"spr_circuloseta","path":"sprites/spr_circuloseta/spr_circuloseta.yy",},},
+    {"id":{"name":"spr_enemigo","path":"sprites/spr_enemigo/spr_enemigo.yy",},},
     {"id":{"name":"spr_inimigo","path":"sprites/spr_inimigo/spr_inimigo.yy",},},
     {"id":{"name":"spr_parede_invisivel","path":"sprites/spr_parede_invisivel/spr_parede_invisivel.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
