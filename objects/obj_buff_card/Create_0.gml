@@ -41,7 +41,10 @@ function dando_buff_pro_player(){
 		if buff_escolhido[0] = 5
 		{
 		player.bala_quantia_de_tiros += 2
-		player.bala_quantia_de_tiros_time_per_shot -= 1
+			if player.bala_quantia_de_tiros_time_per_shot >= 3
+			{
+			player.bala_quantia_de_tiros_time_per_shot -= 1
+			}
 		}
 	}
 

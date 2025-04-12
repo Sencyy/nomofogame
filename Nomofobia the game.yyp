@@ -53,6 +53,7 @@
     {"id":{"name":"obj_gerador_de_buffs","path":"objects/obj_gerador_de_buffs/obj_gerador_de_buffs.yy",},},
     {"id":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},},
     {"id":{"name":"obj_inimigo","path":"objects/obj_inimigo/obj_inimigo.yy",},},
+    {"id":{"name":"obj_meiodacamera","path":"objects/obj_meiodacamera/obj_meiodacamera.yy",},},
     {"id":{"name":"obj_parede_invisivel","path":"objects/obj_parede_invisivel/obj_parede_invisivel.yy",},},
     {"id":{"name":"obj_player_tiro","path":"objects/obj_player_tiro/obj_player_tiro.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},

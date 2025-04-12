@@ -146,10 +146,31 @@ function level_up(){
 }
 
 function nao_fugir_da_sala(){
-x = max(x, 32);
-y = max(y, 32);
-x = min(x,room_width-32);
-y = min(y,room_height-32);
+	if x+spX < 32
+	{
+	x = max(x, 32);
+	spX = 0
+	}
+	
+	if y+spY < 32
+	{
+	y = max(y, 32);
+	spY = 0
+	}
+	
+	if x+spX > room_width-32 
+	{
+	x = min(x,room_width-32);	
+	spX =0 
+	}
+	
+	if y+spY > room_height-32
+	{
+	y = min(y,room_height-32);
+	spY =0
+	}
+	
+
 }
 
 function COBAIA_lv_up()
@@ -230,3 +251,20 @@ sprite_index = spr_player_morto
 image_xscale = size_sprite
 image_yscale = size_sprite
 }
+	
+function criando_meiodacamera(){
+	if !instance_exists(obj_meiodacamera)
+	{
+	var xis = x//window_get_width()/5 + x
+	var yip =  y 
+	var meiodacamera = instance_create_layer(xis,yip,"camada_cima",obj_meiodacamera)
+	meiodacamera.player = self 
+	}
+	else
+	{
+	var meiodacamera = instance_nearest(x,y,obj_meiodacamera)
+	meiodacamera.spxply = spX
+	meiodacamera.spyply = spY
+	}
+}
+criando_meiodacamera()

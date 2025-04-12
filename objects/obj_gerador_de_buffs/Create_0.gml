@@ -33,8 +33,8 @@ function spaw_cards()
 	buff_card.gerador_de_buff_pai = self
 	buff_card.buff_type = buff_type_random
 	buff_card.buff_escolhido = buff_especifico
-	buff_card.x = x -300 +(i*300)
-	buff_card.y = y-100
+	buff_card.x = obj_meiodacamera.x -300 +(i*300)
+	buff_card.y = obj_meiodacamera.y - 60
 	}
 }
 
