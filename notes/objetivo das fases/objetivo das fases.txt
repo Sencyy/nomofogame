@@ -1,0 +1,13 @@
+FASE 1	########################################
+--- Coletar coletaveis que apareceram em lugarem aleatorios do mapa, quando pegar uma certa quantidade
+você passa da fase , cada coletavel melhora seu nivel.
+
+
+FASE 2 #########################################
+--- Você precisa somente sobreviver até um certo tempo, porém vai ter uma nevoa cobrindo sua visão que fica 
+cade vez maior, pra impedir você precisa clicar no botão de meditar e assim vai disperssar a nevoa por um certo 
+tempo
+
+
+FASE 3 #########################################
+--- 

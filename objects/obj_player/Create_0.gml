@@ -173,6 +173,7 @@ function nao_fugir_da_sala(){
 
 }
 
+/*
 function COBAIA_lv_up()
 {
 	if level_timer >= level_to_up
@@ -180,7 +181,7 @@ function COBAIA_lv_up()
 	estado_level_up = 1
 	level_to_up += 4 + level_to_up/3
 	}
-}
+} */
 
 function colisao_na_parede_invisivel(){
 

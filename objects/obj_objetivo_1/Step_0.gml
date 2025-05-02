@@ -1,2 +1,4 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
+if coletaveis_pegos = coletaveis_para_passar 
+{
+concluido()
+}

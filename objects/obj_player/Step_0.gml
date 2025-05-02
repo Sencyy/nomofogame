@@ -13,7 +13,7 @@ if estado_morto = 0
 	contando_cd()
 	}
 level_up()
-COBAIA_lv_up()
+//COBAIA_lv_up()
 criando_meiodacamera()
 }
 else
