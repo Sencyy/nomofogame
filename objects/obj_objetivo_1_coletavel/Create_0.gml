@@ -3,9 +3,10 @@ pai = noone
 //
 
 // DADOS SOBRE CRESCENDO
-crescendo_time = 300
+crescendo_time = 600
 crescendo_time_timer = 0
 cresceu = 0
+plantou = 0
 //
 
 
@@ -28,6 +29,13 @@ crescendo_time_timer = min(crescendo_time_timer+1,crescendo_time)
 	if crescendo_time_timer = crescendo_time 
 	{
 	cresceu = 1
+	}
+}
+
+function function_plantou(){
+	if place_meeting(x,y,obj_player)
+	{
+	plantou=1
 	}
 }
 
