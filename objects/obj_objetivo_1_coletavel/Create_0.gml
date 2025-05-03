@@ -3,7 +3,7 @@ pai = noone
 //
 
 // DADOS SOBRE CRESCENDO
-crescendo_time = 600
+crescendo_time = 500
 crescendo_time_timer = 0
 cresceu = 0
 plantou = 0
@@ -18,6 +18,11 @@ function coletando(){
 		with(pai)
 		{
 		spaw_coletavel()
+		obj_COBAIA_GERADOR_DE_INIMIGO_V2.dificuldade += 1
+		}
+		with(obj_COBAIA_GERADOR_DE_INIMIGO_V2)
+		{
+		dificuldade_spawner_scale_check()
 		}
 	instance_destroy()
 	}

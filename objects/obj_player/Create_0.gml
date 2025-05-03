@@ -31,8 +31,8 @@ spY = 0
 //
 
 // DADOS DE ATAQUE
-cd = 60
-cd_timer = 0
+bala_cd = 60
+bala_bala_cd_timer = 0
 direcao_bala = 0
 //
 
@@ -81,12 +81,12 @@ function vou_andar(){ // Andando com as informações dada no "controle"
 }
 
 function vou_atacar(){ // Criando a instancia do "gerador_de_balas", checando se o player...
-					   // está no estado ataque e se seu cd está 0.
+					   // está no estado ataque e se seu bala_cd está 0.
 					   
-	if estado_atacando = 1 && cd_timer = 0
+	if estado_atacando = 1 && bala_bala_cd_timer = 0
 	{
 	//show_debug_message(estado_atacando)
-	cd_timer = cd
+	bala_bala_cd_timer = bala_cd
 	estado_atacando = 0
 	
 	var ataque = instance_create_layer(x,y,"camada_baixo",obj_gerador_de_balas)
@@ -103,8 +103,8 @@ function vou_atacar(){ // Criando a instancia do "gerador_de_balas", checando se
 	}
 }
 
-function contando_cd(){ // tá reduzind o cd
-cd_timer = max(cd_timer-1,0)
+function contando_bala_cd(){ // tá reduzind o bala_cd
+bala_bala_cd_timer = max(bala_bala_cd_timer-1,0)
 }
 
 
@@ -123,7 +123,7 @@ function level_up(){
 	{
 	instance_destroy(obj_gerador_de_balas)
 	instance_destroy(obj_player_tiro)
-	instance_destroy(obj_inimigo_pai) // cobaia
+	//instance_destroy(obj_inimigo_pai) 
 	
 		if !instance_exists(obj_gerador_de_buffs)
 		{

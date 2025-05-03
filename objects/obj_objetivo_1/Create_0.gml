@@ -1,5 +1,5 @@
 // DADOS SOBRE COLETAVEIS
-coletaveis_para_passar = 10
+coletaveis_para_passar = 15
 coletaveis_pegos = 0
 //
 

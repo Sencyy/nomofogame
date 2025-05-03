@@ -2,12 +2,12 @@
 alvo = noone 
 
 dir_to_player =  0 
-spd = 1
+spd = 2
 frame = 0
 //
 
 // DADOS SOBRE VIDA
-hp = 10 + obj_player.level * 2
+hp = 10 
 estado_morto = 0
 //
 
@@ -69,7 +69,7 @@ y += spY
 
 function walking_smart() {
 	alvo = instance_nearest(x,y,obj_player)
-	mp_potential_step(alvo.x, alvo.y, 2/* aqui e a velocidade */, false)
+	mp_potential_step(alvo.x, alvo.y, spd/* aqui e a velocidade */, false)
 }
 
 function atacar() {

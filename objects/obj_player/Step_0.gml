@@ -10,7 +10,7 @@ if estado_morto = 0
 	vou_andar()
 	trocando_spr()
 	vou_atacar()
-	contando_cd()
+	contando_bala_cd()
 	}
 level_up()
 //COBAIA_lv_up()
