@@ -1,8 +1,8 @@
 {
-  "$GMProject":"v1",
+  "$GMProject":"",
   "%Name":"Nomofobia the game",
   "AudioGroups":[
-    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -34,12 +34,11 @@
     {"$GMFolder":"","%Name":"Sons","folderPath":"folders/Sons.yy","name":"Sons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.0.795",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"Nomofobia the game",
   "resources":[
@@ -68,7 +67,6 @@
     {"id":{"name":"quebra_linha","path":"scripts/quebra_linha/quebra_linha.yy",},},
     {"id":{"name":"script_bala_andando","path":"scripts/script_bala_andando/script_bala_andando.yy",},},
     {"id":{"name":"script_destroy_bala","path":"scripts/script_destroy_bala/script_destroy_bala.yy",},},
-    {"id":{"name":"Dungeon_Tileset","path":"sprites/Dungeon_Tileset/Dungeon_Tileset.yy",},},
     {"id":{"name":"Imagem_do_WhatsApp_de_2025_03_19___s__19_08_44_f00d1bd1","path":"sprites/Imagem_do_WhatsApp_de_2025_03_19___s__19_08_44_f00d1bd1/Imagem_do_WhatsApp_de_2025_03_19___s__19_08_44_f00d1bd1.yy",},},
     {"id":{"name":"iti_malia_v2","path":"sprites/iti_malia_v2/iti_malia_v2.yy",},},
     {"id":{"name":"iti_malia","path":"sprites/iti_malia/iti_malia.yy",},},
@@ -89,11 +87,7 @@
     {"id":{"name":"spr_player_walking_up","path":"sprites/spr_player_walking_up/spr_player_walking_up.yy",},},
     {"id":{"name":"spr_player_walking_vertical","path":"sprites/spr_player_walking_vertical/spr_player_walking_vertical.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
-<<<<<<< HEAD
     {"id":{"name":"spr_zona_hitbox","path":"sprites/spr_zona_hitbox/spr_zona_hitbox.yy",},},
-=======
-    {"id":{"name":"Dungeon","path":"tilesets/Dungeon/Dungeon.yy",},},
->>>>>>> d748264852d67aaa920007967241620f2709ed3f
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
