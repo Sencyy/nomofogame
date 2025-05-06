@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v1",
   "%Name":"iti_malia_v2",
   "bboxMode":0,
   "bbox_bottom":332,
@@ -33,7 +33,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"iti_malia_v2",
     "autoRecord":true,
     "backdropHeight":768,
@@ -64,6 +64,8 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":333.0,
+    "seqWidth":557.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
