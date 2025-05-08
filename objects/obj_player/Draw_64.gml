@@ -6,3 +6,5 @@ if estado_morto = 1
 {
 draw_text_transformed(window_get_width()/2-200,window_get_height()/2-100,"MORREU",12,12,0)
 }
+
+insano()

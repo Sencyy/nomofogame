@@ -10,6 +10,7 @@
     {"name":"inst_791875CD","path":"rooms/Fase_1_Ansiedade/Fase_1_Ansiedade.yy",},
     {"name":"inst_2FE593DB","path":"rooms/Fase_1_Ansiedade/Fase_1_Ansiedade.yy",},
     {"name":"inst_4ADB93CA","path":"rooms/Fase_1_Ansiedade/Fase_1_Ansiedade.yy",},
+    {"name":"inst_5A918EF2","path":"rooms/Fase_1_Ansiedade/Fase_1_Ansiedade.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -20,8 +21,24 @@
         {"$GMRInstance":"v2","%Name":"inst_791875CD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_791875CD","objectId":{"name":"obj_COBAIA_DIALOGO","path":"objects/obj_COBAIA_DIALOGO/obj_COBAIA_DIALOGO.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.05,"scaleY":0.05,"x":-96.0,"y":0.0,},
         {"$GMRInstance":"v2","%Name":"inst_2FE593DB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2FE593DB","objectId":{"name":"obj_COBAIA_GERADOR_DE_INIMIGO_V2","path":"objects/obj_COBAIA_GERADOR_DE_INIMIGO_V2/obj_COBAIA_GERADOR_DE_INIMIGO_V2.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.6552962,"scaleY":0.8078078,"x":-352.0,"y":864.0,},
         {"$GMRInstance":"v2","%Name":"inst_4ADB93CA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4ADB93CA","objectId":{"name":"obj_objetivo_1","path":"objects/obj_objetivo_1/obj_objetivo_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":35.0,"scaleY":25.0,"x":2112.0,"y":896.0,},
+        {"$GMRInstance":"v2","%Name":"inst_5A918EF2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5A918EF2","objectId":{"name":"obj_mobile","path":"objects/obj_mobile/obj_mobile.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1216.0,"y":640.0,},
       ],"layers":[],"name":"camada_baixo","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMREffectLayer":"","%Name":"Effect_1","depth":300,"effectEnabled":true,"effectType":"_filter_tintfilter","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Effect_1","properties":[
+        {"name":"g_TintCol","type":1,"value":"#FF2626B5",},
+      ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRTileLayer":"","%Name":"Tiles_1","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":62,"SerialiseWidth":62,"TileCompressedData":[
+          1,10,-60,4,2,5,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,
+          2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,
+          23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,
+          -60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,
+          10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,
+          2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,
+          23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,
+          -60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,
+          10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,2,35,10,-60,23,
+          2,35,40,-60,41,1,45,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"tile_dungeon","path":"tilesets/tile_dungeon/tile_dungeon.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"Fase_1_Ansiedade",
   "parent":{
@@ -39,10 +56,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":2000,
+    "Height":1984,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":2000,
+    "Width":1984,
   },
   "sequenceId":null,
   "views":[

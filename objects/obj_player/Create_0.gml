@@ -269,3 +269,34 @@ function criando_meiodacamera(){
 	}
 }
 criando_meiodacamera()
+
+// ===================================================================================================
+// =========================================AREA GUI==================================================
+// ===================================================================================================
+
+SANIDADE = 500
+
+barras_x = 50 
+barras_y = 25
+barras_comprimento = 100
+barras_altura = 10
+barras_espacamento = 10
+life_x = barras_x
+life_y = barras_y
+life_xx = life_x +barras_comprimento
+life_yy = life_y + barras_altura
+san_x = barras_x
+san_y = life_yy + barras_espacamento
+san_xx = san_x + barras_comprimento
+san_yy = san_y + barras_altura
+
+
+function insano() {
+        draw_healthbar(life_x, life_y, life_xx, life_yy, hp * 20, c_gray, c_red, c_green, 0, true, true)
+        draw_text(life_x - barras_x + 7, life_y - 5, "VIDA")
+		draw_healthbar(san_x, san_y, san_xx, san_yy, SANIDADE / 5, c_gray, c_blue, c_aqua, 0, true, true)
+        draw_text(san_x - barras_x + 10, san_y - 5, "SAN")
+		SANIDADE--
+        
+        if SANIDADE <= 0 { estado_morto = 1 }
+}
