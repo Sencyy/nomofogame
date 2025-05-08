@@ -1,0 +1,1 @@
+instance_create_layer(random(1984), random(1984), "camada_baixo", obj_mobile)
