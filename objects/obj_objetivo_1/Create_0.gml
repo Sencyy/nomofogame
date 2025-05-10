@@ -1,6 +1,7 @@
 // DADOS SOBRE COLETAVEIS
-coletaveis_para_passar = 15
+coletaveis_para_passar = 7
 coletaveis_pegos = 0
+coletavel_crescendo_time = 400
 //
 
 // DADOS SOBRE ZONAS
@@ -28,6 +29,7 @@ _y_swpan = irandom_range(_zona_to_spaw[2]+400,_zona_to_spaw[4]-400)
 
 coletavel= instance_create_layer(_x_swpan,_y_swpan,"camada_meio",obj_objetivo_1_coletavel)
 coletavel.pai = self 
+coletavel.crescendo_time = coletavel_crescendo_time
 }
 
 function escolhendo_zona_sem_ser_a_do_player(_zona_ignorada){

@@ -11,9 +11,9 @@ if estado_morto = 0
 	trocando_spr()
 	vou_atacar()
 	contando_bala_cd()
+	insano_STEP()
 	}
 level_up()
-//COBAIA_lv_up()
 criando_meiodacamera()
 }
 else

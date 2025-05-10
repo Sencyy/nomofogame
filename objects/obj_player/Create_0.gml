@@ -36,6 +36,14 @@ bala_bala_cd_timer = 0
 direcao_bala = 0
 //
 
+// DADOS SOBRE SANIDADE
+sanidade_modo_imune = 0
+sanidade_modo_imune_timer = 0
+sanidade_perdendo = 1
+SANIDADE = 500
+SANIDADE_MAX = 500
+//
+
 // DADOS BUFF DE ATRIBUTOS 
 
 // Vai ter uma array aqui que vai guardar os valores de dano extra/ spd extra e etc
@@ -274,7 +282,7 @@ criando_meiodacamera()
 // =========================================AREA GUI==================================================
 // ===================================================================================================
 
-SANIDADE = 500
+//SANIDADE = 500
 
 barras_x = 50 
 barras_y = 25
@@ -291,12 +299,49 @@ san_xx = san_x + barras_comprimento
 san_yy = san_y + barras_altura
 
 
-function insano() {
+
+function  insano_STEP(){
+		if SANIDADE > SANIDADE_MAX
+		{
+		SANIDADE = SANIDADE_MAX
+		}
+	
+		if sanidade_modo_imune = 0
+		{
+		SANIDADE -= sanidade_perdendo
+		}
+		else
+		{
+		sanidade_modo_imune_timer--
+			if sanidade_modo_imune_timer <= 0
+			{
+			sanidade_modo_imune = 0
+			}
+		}
+
+if SANIDADE <= 0 {estado_morto = 1}	
+}
+
+
+
+
+
+
+function insano_GUI() {
+	
+var san_bar_value = SANIDADE/SANIDADE_MAX *100
+
+	
         draw_healthbar(life_x, life_y, life_xx, life_yy, hp * 20, c_gray, c_red, c_green, 0, true, true)
         draw_text(life_x - barras_x + 7, life_y - 5, "VIDA")
-		draw_healthbar(san_x, san_y, san_xx, san_yy, SANIDADE / 5, c_gray, c_blue, c_aqua, 0, true, true)
+		draw_healthbar(san_x, san_y, san_xx, san_yy, san_bar_value, c_gray, c_blue, c_aqua, 0, true, true)
         draw_text(san_x - barras_x + 10, san_y - 5, "SAN")
-		SANIDADE--
-        
-        if SANIDADE <= 0 { estado_morto = 1 }
 }
+
+
+
+
+
+
+
+

@@ -34,8 +34,7 @@ zona_do_player = [] // Variavel que guarda a zona especifica que o player está
 //
 
 
-function dificuldade_status_scale_check()
-{
+function dificuldade_status_scale_check(){
 var up = dificuldade
 
 status_up_hp = 1 + up/10
@@ -67,23 +66,7 @@ var zona_escolhida = [] // variavel que guarda os dados da zona especifica escol
 
 return zona_escolhida // enviando_zona_que_o_player_está
 }
-
-function spaw_inimigo_fora_da_sua_area(_zona_ignorada){
-var zona_escolhida = [] //zona que o inimigo ira spawnar 
-var zonas_sem_ignorada = variable_clone(zonas) // possiveis zona a serem escolhidas, com exeção da zona que o player está 
-
-array_delete(zonas_sem_ignorada,_zona_ignorada[0],1) // tirando a "zona_do_player" da "zona_sem_ignorada"
-
-randomize()
-zona_escolhida = zonas_sem_ignorada[random(array_length(zonas_sem_ignorada))]
-
-
-var point_x = irandom_range(zona_escolhida[1]+300,zona_escolhida[3]-300)
-var point_y = irandom_range(zona_escolhida[2]+300,zona_escolhida[4]-300)
-
-var inimigo = instance_create_layer(point_x,point_y,"camada_baixo",obj_inimigo) 
-}
-
+	
 function contando_tempo_para_spawnar(){
 	
 	if spawn_inimigo_time_timer = spawn_inimigo_time
@@ -94,3 +77,31 @@ function contando_tempo_para_spawnar(){
 spawn_inimigo_time_timer = min(spawn_inimigo_time_timer+1,spawn_inimigo_time)
 }
 
+function zona_get_random(_zona_ignorada){
+var zona_escolhida = [] //zona que o inimigo ira spawnar 
+var zonas_sem_ignorada = variable_clone(zonas) // possiveis zona a serem escolhidas, com exeção da zona que o player está 
+
+	if is_array(_zona_ignorada)
+	{
+	array_delete(zonas_sem_ignorada,_zona_ignorada[0],1) // tirando a "zona_do_player" da "zona_sem_ignorada"
+	// tira a zona colocada no parametro da função
+	}
+	else
+	{
+	// não tira nada 
+	}
+	
+randomize()
+zona_escolhida = zonas_sem_ignorada[random(array_length(zonas_sem_ignorada))]
+
+return variable_clone(zona_escolhida)
+}
+
+function spaw_inimigo(_zona_especifica){
+
+var spaw_x = irandom_range(_zona_especifica[1],_zona_especifica[3]) - 300 
+var spaw_y = irandom_range(_zona_especifica[2],_zona_especifica[4]) - 300
+
+
+instance_create_layer(spaw_x,spaw_y,"camada_meio",obj_inimigo)
+}
