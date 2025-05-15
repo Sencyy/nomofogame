@@ -15,11 +15,11 @@ function coletando(){
 	{
 	pai.coletaveis_pegos +=1 
 	obj_player.estado_level_up = 1
-	obj_player.SANIDADE = obj_player.SANIDADE_MAX
 	obj_player.SANIDADE_MAX += 30
 	obj_player.san_xx += 30
 	obj_player.sanidade_perdendo -= 0.1
 	obj_objetivo_1.coletavel_crescendo_time += 100
+	obj_player.SANIDADE = obj_player.SANIDADE_MAX
 		with(pai)
 		{
 		spaw_coletavel()

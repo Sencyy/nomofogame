@@ -9,6 +9,7 @@ spawn_bala_mount_time_timer = max(spawn_bala_mount_time_timer-1,0)
 	spawn_bala_mount_time_timer = spawn_bala_mount_time
 	spawn_bala_mount -=1
 	gerar_bala() 
+	tocar_som_disparo()
 	}
 }
 else

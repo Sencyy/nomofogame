@@ -33,6 +33,7 @@ function spaw_cards()
 	buff_card.gerador_de_buff_pai = self
 	buff_card.buff_type = buff_type_random
 	buff_card.buff_escolhido = buff_especifico
+	buff_card.buff_raridade = buff_especifico[1]
 	buff_card.x = obj_meiodacamera.x -300 +(i*300)
 	buff_card.y = obj_meiodacamera.y - 60
 	}
@@ -44,24 +45,24 @@ function function_buff_id(buff_type_especifico,_array){ // esta função dá os 
 	
 	_array[0][0] = 1
 	_array[0][1] = 3
-	_array[0][2] = "mais dano"
+	_array[0][2] = "Aumenta o dano das balas"
 	
 	//
 	_array[1][0] = 2
 	_array[1][1] = 3
-	_array[1][2] = "mais rapido"
+	_array[1][2] = "As balas vao mais longe e mais rapido"
 	//
 	_array[2][0] = 3
 	_array[2][1] = 2
-	_array[2][2] = "mais projeteis"
+	_array[2][2] = "Mais balas por disparo"
 	//
 	_array[3][0] = 4
-	_array[3][1] = 3
-	_array[3][2] = "penetrante"
+	_array[3][1] = 2
+	_array[3][2] = "Aumenta a capacidade de penetração das balas"
 	//
 	_array[4][0] = 5
 	_array[4][1] = 1
-	_array[4][2] = "mais disparos"
+	_array[4][2] = "Dispara mais vezes"
 	}
 	if buff_type_especifico = 1 // se o buff é do tipo "atributo" 
 	{ // colocando os possiveis buffs do tipo "atributo" numa array 

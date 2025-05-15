@@ -16,6 +16,7 @@ atravessa = 0
 atravessa_quantos = 0
 alvo = noone // quem vai ser o alvo que será colidido
 sprite = noone
+bala_time = 0
 //
 
 // DADOS DO GERADOR DE BALAS
@@ -42,7 +43,7 @@ spawn_bala_escopeta_ii = 0 // base do "i" so que usado para evitar que a dispers
 
 function gerar_bala(){
 for(i=0;i <= spawn_bala_escopeta_quantia;i++)
-{
+{		
 	spawn_bala_escopeta_direction = (spawn_bala_escopeta_ii * 20) * spawn_bala_escopeta_maisoumenos
 	
 	var bala = instance_create_layer(x,y,"camada_baixo",obj_player_tiro)
@@ -56,6 +57,7 @@ for(i=0;i <= spawn_bala_escopeta_quantia;i++)
 	bala.atravessa_quantos = atravessa_quantos
 
 	bala.dano = player.bala_dano //dano da bala que está no player
+	bala.life_time = bala_time
 
 	bala.list_bala_type = player.bala_tipo
 	ds_list_copy(bala.list_bala_efeitos,player.efeitos) // colando a lista de efeitos do player PARA a bala.
@@ -74,7 +76,9 @@ spawn_bala_escopeta_maisoumenos = 1
 }
 
 
-
-
-
+function tocar_som_disparo(){
+randomize()
+som_pra_tocar = choose(snd_bala_disparou_1,snd_bala_disparou_2,snd_bala_disparou_3)
+audio_play_sound(som_pra_tocar,1,false)
+}
 

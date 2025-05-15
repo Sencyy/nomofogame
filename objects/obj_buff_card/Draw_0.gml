@@ -1,2 +1,7 @@
 draw_self()
-draw_text(x,y,buff_escolhido[2])
+
+
+if mouse_em_cima = 1
+{
+draw_text(x,y+32,buff_escolhido[2])
+}

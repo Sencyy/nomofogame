@@ -47,7 +47,19 @@ status_up_peso = -up/2
 }
 
 function dificuldade_spawner_scale_check(){
-spawn_inimigo_time -= dificuldade*2
+
+	if dificuldade = 2
+	{
+	spawn_inimigo_time = 80
+	}
+	if dificuldade = 5
+	{
+	spawn_inimigo_time = 60
+	}
+	if dificuldade = 8
+	{
+	spawn_inimigo_time = 50
+	}
 }
 
 function zona_get_player(){

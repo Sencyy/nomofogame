@@ -3,6 +3,12 @@ spd = 5
 dir = 0
 dano = 0
 sprite = noone
+life_time = 0
+//
+
+
+// DADOS DO TRAJETO DA BALA
+life_time_timer = 0
 //
 
 // DADOS LIST'S 
@@ -46,6 +52,7 @@ function colisao(){
 				}
 			}
 		script_destroy_bala(list_bala_efeitos) // DESTROY BALA
+		tocar_som_colisao()
 		}
 		else
 		{
@@ -62,6 +69,7 @@ function colisao(){
 					inimigo_especifico.hp -= dano
 					atravessa_quantos -= 1
 					ds_list_add(inimigos_atingidos_list,inimigo_especifico)
+					tocar_som_colisao_atravessou()
 					}
 				}
 			ds_list_destroy(colididos_list)
@@ -70,11 +78,31 @@ function colisao(){
 			if atravessa_quantos <= 0
 			{
 			script_destroy_bala(list_bala_efeitos)
+			tocar_som_colisao()
 			}
 		}
 	}
 }
 
 
+function tempo_para_se_destruir(){
+life_time_timer += 1 
+	if life_time_timer >= life_time
+	{
+	script_destroy_bala(list_bala_efeitos)
+	}
 
+}
+	
+	
+function tocar_som_colisao(){
+randomize()
+som_pra_tocar = choose(snd_bala_atingiu_colidiu_1,snd_bala_atingiu_colidiu_2)
+audio_play_sound(som_pra_tocar,10,false)
+}
 
+function tocar_som_colisao_atravessou(){
+randomize()
+som_pra_tocar = choose(snd_bala_atingiu_atravessou_1,snd_bala_atingiu_atravessou_2)
+audio_play_sound(som_pra_tocar,1,false)
+}

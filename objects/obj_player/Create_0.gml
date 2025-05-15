@@ -34,6 +34,7 @@ spY = 0
 bala_cd = 60
 bala_bala_cd_timer = 0
 direcao_bala = 0
+bala_life_time = 40
 //
 
 // DADOS SOBRE SANIDADE
@@ -108,6 +109,7 @@ function vou_atacar(){ // Criando a instancia do "gerador_de_balas", checando se
 	ataque.atravessa = bala_atravessa
 	ataque.atravessa_quantos = bala_atravessa_quantos
 	ataque.spawn_bala_mount_time = bala_quantia_de_tiros_time_per_shot
+	ataque.bala_time = bala_life_time
 	}
 }
 
@@ -319,7 +321,7 @@ function  insano_STEP(){
 			}
 		}
 
-if SANIDADE <= 0 {estado_morto = 1}	
+if SANIDADE <= 0 {estado_morto = 0}	
 }
 
 

@@ -1,8 +1,13 @@
 player = noone
 gerador_de_buff_pai = noone
+
 buff_type = noone
+buff_raridade = 0
 buff_escolhido = []
 
+// DADOS SOBRE ESCOLHENDO NO MOUSE
+mouse_em_cima = 0
+//
 
 
 function destroy_tudo()
@@ -59,4 +64,22 @@ function dando_buff_pro_player(){
 
 	}
 	
+}
+	
+	
+function change_spr_raridade(){
+
+	if buff_raridade = 3
+	{
+	sprite_index = spr_card_buff
+	}
+	else if buff_raridade = 2
+	{
+	sprite_index= spr_card_buff_raro
+	}
+	else 
+	{
+	sprite_index = spr_card_buff_raro_epico
+	}
+
 }
