@@ -53,6 +53,7 @@ function colisao(){
 			}
 		script_destroy_bala(list_bala_efeitos) // DESTROY BALA
 		tocar_som_colisao()
+		spaw_purpurina(spr_efeito_bala_atingiu,dir)
 		}
 		else
 		{
@@ -69,7 +70,11 @@ function colisao(){
 					inimigo_especifico.hp -= dano
 					atravessa_quantos -= 1
 					ds_list_add(inimigos_atingidos_list,inimigo_especifico)
-					tocar_som_colisao_atravessou()
+						if atravessa_quantos >= 1
+						{
+						tocar_som_colisao_atravessou()
+						spaw_purpurina(spr_efeito_bala_atravessou,dir)
+						}
 					}
 				}
 			ds_list_destroy(colididos_list)
@@ -79,6 +84,7 @@ function colisao(){
 			{
 			script_destroy_bala(list_bala_efeitos)
 			tocar_som_colisao()
+			spaw_purpurina(spr_efeito_bala_atingiu,dir)
 			}
 		}
 	}
@@ -90,6 +96,7 @@ life_time_timer += 1
 	if life_time_timer >= life_time
 	{
 	script_destroy_bala(list_bala_efeitos)
+	spaw_purpurina(spr_efeito_bala_bala_sumindo,dir)
 	}
 
 }
@@ -105,4 +112,10 @@ function tocar_som_colisao_atravessou(){
 randomize()
 som_pra_tocar = choose(snd_bala_atingiu_atravessou_1,snd_bala_atingiu_atravessou_2)
 audio_play_sound(som_pra_tocar,1,false)
+}
+	
+function spaw_purpurina(_spr,_angle){
+var purpurina = instance_create_layer(x,y,"camada_cima",obj_purpurina)
+purpurina.sprite = _spr
+purpurina.angulo_do_spr = _angle
 }

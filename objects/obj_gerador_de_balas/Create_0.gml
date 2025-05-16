@@ -45,7 +45,6 @@ function gerar_bala(){
 for(i=0;i <= spawn_bala_escopeta_quantia;i++)
 {		
 	spawn_bala_escopeta_direction = (spawn_bala_escopeta_ii * 20) * spawn_bala_escopeta_maisoumenos
-	
 	var bala = instance_create_layer(x,y,"camada_baixo",obj_player_tiro)
 
 	bala.dir = player.direcao_bala + spawn_bala_escopeta_direction // direcao da bala que está no player 

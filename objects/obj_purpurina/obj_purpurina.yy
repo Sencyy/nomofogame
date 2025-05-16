@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_COBAIA_GERADOR_DE_INIMIGO_V2",
+  "%Name":"obj_purpurina",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_COBAIA_GERADOR_DE_INIMIGO_V2",
+  "name":"obj_purpurina",
   "overriddenProperties":[],
   "parent":{
-    "name":"GERADOR_DE_INIMGO",
-    "path":"folders/Objetos/GERADOR_DE_INIMGO.yy",
+    "name":"EFEITOS_VISUAIS",
+    "path":"folders/Objetos/EFEITOS_VISUAIS.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"iti_malia_v2",
-    "path":"sprites/iti_malia_v2/iti_malia_v2.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
